@@ -9,6 +9,8 @@
 body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  background-color: #1A0B2E;
+  color: #FFFFFF;
 }
 
 
@@ -82,6 +84,16 @@ ul{
     font-size: 1rem;
 }
 
+
+.btn2:hover{
+   background:linear-gradient(to right, #1A0B2E 0% ,#FB09B4 51% , #00FF88 100%);
+   opacity: 0.9;
+
+   transform: scale(1.1);
+   transition: 0.5s;
+
+}
+
 /* Header */
 
 
@@ -132,13 +144,13 @@ opacity: 90%;
     align-items: center;
     flex-direction: column;
 
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 
 }
 
 
 .banner .mic{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     height: 350px;
     width: 350px;
     background: url(assets/hero-circle.png);
@@ -178,5 +190,59 @@ opacity: 90%;
     display: flex;
     margin-top: 20px;
     gap: 8px;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1A0B2E;
+    padding: 50px 200px 120px 200px;
+    gap: 80px;
+}
+
+.about hr{
+    color: #FFFFFF;
+    width: 90%;
+    opacity: 50%;
+}
+
+.about .about-text{
+    color:#FFFFFF;
+    max-width: 1200px;
+}
+
+.about .about-text h2{
+    font-size: 48px;
+    font-weight: bold;
+    height: 58px;
+    margin-bottom: 20px;
+}
+
+.about  p{
+    opacity: 80%;
+}
+
+
+.about .about-content{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    max-width: 1200px;
+    gap: 80px;
+}
+
+.about .about-content h1{
+    color: #00FF88;
+    font-size: 48px;
+    height: 58px;
+}
+
+.about .about-content p{
+    color: #FFFFFF;
+    height: 20px;
+    opacity: 80%;
 }
 
