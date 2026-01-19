@@ -131,6 +131,9 @@ font-size: medium;
 opacity: 90%;
 }
 
+/* main */
+
+/* banner Section */
 
 .banner{
     background-image: url(assets/hero-bg.png);
@@ -192,6 +195,7 @@ opacity: 90%;
     gap: 8px;
 }
 
+/* About Section */
 
 .about{
     display: flex;
@@ -244,5 +248,87 @@ opacity: 90%;
     color: #FFFFFF;
     height: 20px;
     opacity: 80%;
+}
+
+
+
+
+
+/* Why Choose section */
+.whychoose{
+    background-color: #230E3D;
+    padding: 120px 5%; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.whychoose-content{
+    
+    max-width: 1200px;
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.whychoose h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    height: 58px;
+    margin-bottom: 20px;
+    grid-column: span 3;
+}
+
+.whychoose img{
+    height: 60px;
+    width: 60px;
+    align-self:start;
+}
+
+
+.whychoose h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    align-self: start;
+}
+
+
+.whychoose p{
+    line-height: 24px;
+    opacity: 60%;
+    align-self: start;
+}
+
+.whychoose .card{
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 40px;
+    gap: 16px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.whychoose .card-1 {
+    grid-row: span 2;
+}
+
+
+.whychoose .card-2 ,.whychoose .card-3 , .whychoose .card-4{
+    grid-column: span 2;
+}
+
+
+/* Featured section */
+
+
+.featured{
+    background-color: #1A0B2E;
 }
 
