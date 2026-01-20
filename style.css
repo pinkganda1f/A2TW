@@ -366,6 +366,8 @@ opacity: 90%;
 
 .featured .card .card-content{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .featured .card .card-content h3{
     font-size: 24px;
@@ -395,6 +397,9 @@ opacity: 90%;
     flex-direction: column;
     gap: 40px;
 
+
+   margin-bottom: 120px;
+
 }
 
 .apps .host h2{
@@ -422,6 +427,7 @@ opacity: 90%;
 .host .host-card .host-content{
     display: flex;
     flex-direction: column;
+    
     gap: 16px;
 }
 
@@ -463,3 +469,46 @@ opacity: 90%;
     border-color: #FB09B4; 
     transform: scale(1.1);
 }
+
+
+
+/* Footer */
+
+.footer{
+
+    height: 25vh;
+    background-image: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.footer h1{
+    font-size: 3em;
+}
+
+ .footer .socials{
+    display: flex;
+    gap: 40px;
+ }
+
+ .footer .socials a{
+    color: #FFFFFF;
+    font-size: medium;
+    opacity: 60%;
+ }
+
+ .footer .copyright{
+    line-height: 24px;
+    color: #FAFAFA;
+    opacity: 60%;
+    font-size: 16px;
+ }
