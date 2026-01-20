@@ -149,11 +149,9 @@ opacity: 90%;
     height: auto;
 
     display:flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
 
     padding: 50px 5%;
 
@@ -162,11 +160,14 @@ opacity: 90%;
 }
 
 
-.banner .mic-container{
+.banner .mic{
     /* border: 1px solid orange; */
     height: 350px;
     width: 350px;
-   
+    background: url(assets/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     position: relative;
 
@@ -176,36 +177,8 @@ opacity: 90%;
 
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
-
-.spinning-record{
-    height: 100%;
-    width: 100%;
-
-     background: url(assets/hero-circle.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    animation: spin 30s linear infinite;
-}
-
-
-.banner .mic-container .new {
+.badge-new {
     position: absolute;
     top: 10%;
     right: 4%;
@@ -215,24 +188,6 @@ opacity: 90%;
     border-radius: 20px;
     font-weight: bold;
     font-size: 12px;
-    z-index: 10;
-}
-
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-5px); 
-    }
-    100% {
-        transform: translateY(0px); 
-    }
-}
-
-.banner .mic-container .new {
-    animation: float 4s ease-in-out infinite;
 }
 
 
@@ -578,7 +533,7 @@ opacity: 90%;
     line-height: 24px;
     color: #FAFAFA;
     opacity: 60%;
-    font-size: 12px;
+    font-size: 16px;
  }
 
 
@@ -609,7 +564,7 @@ opacity: 90%;
         padding: 60px 20px;
         gap: 30px;
 
-        flex-direction: column;
+
     }
     .banner h1 {
         font-size: 36px; 
@@ -665,7 +620,7 @@ opacity: 90%;
 
         }
 
-
+        
     .whychoose .card-1 { 
         grid-row: span 1;
     
@@ -740,6 +695,4 @@ opacity: 90%;
         gap: 10px;
         font-size: 14px;
     }
-
-
 }
