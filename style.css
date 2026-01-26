@@ -606,12 +606,12 @@ ul {
   .banner h1 {
     font-size: 36px;
   }
-  .banner .mic {
+  .banner .mic-container {
     width: 250px;
     height: 250px;
   }
 
-  .banner .mic img {
+  .banner .mic-container img {
     height: 60%;
 
     width: auto;
